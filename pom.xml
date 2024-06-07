@@ -44,13 +44,13 @@
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-planner_2.12</artifactId>
-            <version>1.19.0</version>
+            <version>${flink.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-core -->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-core</artifactId>
-            <version>1.19.0</version>
+            <version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -66,6 +66,18 @@
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-statebackend-rocksdb</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-api-java-bridge -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-api-java-bridge</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-common -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-common</artifactId>
             <version>${flink.version}</version>
         </dependency>
 
@@ -126,6 +138,20 @@
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
             <version>7.12.1</version>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-x-content &ndash;&gt;
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch-x-content</artifactId>
+            <version>7.12.1</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark-30 -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch-spark-30_2.12</artifactId>
+            <version>7.12.1</version>
+            <scope>provided</scope>
+        </dependency>
+
 
     </dependencies>
 
